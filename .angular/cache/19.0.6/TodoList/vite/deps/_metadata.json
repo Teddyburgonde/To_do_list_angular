@@ -1,34 +1,58 @@
 {
-  "hash": "412bc6ce",
-  "configHash": "d20862ee",
+  "hash": "7804ce0f",
+  "configHash": "633be82d",
   "lockfileHash": "9bb0e91e",
-  "browserHash": "ec0e9f76",
+  "browserHash": "bd297e5a",
   "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "cabb1a44",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "eaec8b36",
+      "needsInterop": false
+    },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "ce7aeeca",
+      "fileHash": "9c65456a",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "983bc317",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "0b80dd03",
+      "fileHash": "3a5c74fa",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "d95c95d6",
+      "fileHash": "91e8e948",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-DDSXTL3A": {
-      "file": "chunk-DDSXTL3A.js"
+    "chunk-7Y7DSUSQ": {
+      "file": "chunk-7Y7DSUSQ.js"
     },
-    "chunk-GZKEX4RU": {
-      "file": "chunk-GZKEX4RU.js"
+    "chunk-Z7LUGPOX": {
+      "file": "chunk-Z7LUGPOX.js"
+    },
+    "chunk-HJSLYVXA": {
+      "file": "chunk-HJSLYVXA.js"
+    },
+    "chunk-Z3GLR2YK": {
+      "file": "chunk-Z3GLR2YK.js"
     }
   }
 }
