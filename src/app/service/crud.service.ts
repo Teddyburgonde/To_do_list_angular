@@ -14,9 +14,13 @@ export class CrudService {
         this.serviceURl = 'http://localhost:3000/tasks'
     }
 
-    addTask(task: Task): Observable<Task> {
-        return this.http.post<Task>(this.serviceURl, task);
-    }
+    // addTask(task: Task): Observable<Task> {
+    //     return this.http.post<Task>(this.serviceURl, task);
+    //}
+
+addTask(task: Partial<Task>): Observable<Task> {
+    return this.http.post<Task>(this.serviceURl, task); // Envoie seulement le `task_name`, sans `id`
+}
 
     getAllTask(): Observable<Task[]> {
         return this.http.get<Task[]>(this.serviceURl);
@@ -24,15 +28,15 @@ export class CrudService {
 
 
     deleteTask(task: Task): Observable<Task> {
-        return this.http.delete<Task>(this.serviceURl+'/' + task.id);
+        return this.http.delete<Task>(this.serviceURl+'/'+ task.id);
     }
 
     // editTask(task: Task): Observable<Task> {
     //     return this.http.put<Task>(this.serviceURl+ '/'+task.id, task);
     // }
 
-    editTask(task: Task): Observable<Task> {
-        return this.http.put<Task>(`${this.serviceURl}/${task.id}`, task); // Utilise l'ID pour modifier
+    editTask(task : Task) : Observable<Task> {
+        return this.http.put<Task>(this.serviceURl+'/'+task.id,task);
     }
 
 }

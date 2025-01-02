@@ -43,29 +43,26 @@ export class DashboardComponent implements OnInit {
     }
 
   addTask() {
-    this.taskObj.task_name = this.addTaskValue;
-    this.crudService.addTask(this.taskObj).subscribe({
+    const newTask = { task_name: this.addTaskValue };
+    this.crudService.addTask(newTask).subscribe({
       next: (res: Task) => {
         this.ngOnInit();
         this.addTaskValue = '';
       },
       error: (err: any) => {
         console.error('Error while adding task:', err);
-        alert(err);
+        alert('Failed to add task');
       },
     });
   }
-  
+
   editTask() {
     this.taskObj.task_name = this.editTaskValue;
-    this.crudService.editTask(this.taskObj).subscribe({
-      next: (res: Task) => {
-        this.ngOnInit();
-      },
-      error: (err: any) => {
-        alert('Failed to update task');
-      },
-    });
+    this.crudService.editTask(this.taskObj).subscribe(res => {
+      this.ngOnInit();
+    }, err=> {
+      alert("Failed to update task");
+    })
   }
 
   deleteTask(etask : Task) {
