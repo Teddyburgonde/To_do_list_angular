@@ -1,16 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": "1",
-      "task_name": "Subscribe to codologic"
-    },
-    {
-      "id": 0,
-      "task_name": "welcome to code logic"
-    },
-    {
-      "id": 0,
-      "task_name": "Create Angular app"
-    }
-  ]
+  "tasks": []
 }
